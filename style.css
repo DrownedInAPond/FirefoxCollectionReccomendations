@@ -11,6 +11,11 @@
   100% { color: red; }
 }
 
+body {
+  font-family: 'Gluten', sans-serif;
+}
+
+/*---------- Bouncy text ---------- */
 
 @keyframes bounce {
     0% {
@@ -30,12 +35,8 @@
     }
 }
 
-body {
-  font-family: 'Gluten', sans-serif;
-}
-
 /* For individual paragraphs (optional) */
-p, li, a {
+p, li {
   animation: rainbow 4s linear infinite !important;
 }
 
@@ -50,4 +51,21 @@ h2{
     top: 50%;
     left: 50%;
     animation: wiggle 0.5s infinite alternate;
+}
+
+/*---------- Wavy text ---------- */
+
+@keyframes jiggle {
+    0% { transform: rotate(-5deg); }
+   25% { transform: rotate(0deg); }
+   50% { transform: rotate(5deg); }
+   75% { transform: rotate(0deg); }
+   100% { transform: rotate(-5deg); }
+}
+a:hover{
+    animation: jiggle 1s infinite;
+}
+
+a{
+  animation: none;
 }
