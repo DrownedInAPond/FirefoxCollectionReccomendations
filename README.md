@@ -7,6 +7,8 @@ this might not be perfect and may even be hard to read in some websites which al
 
 Stylus Config can be found in the style.css file (simply paste this into your stylus CSS editor).
 
+I made this because the learnOpenGL website is so ridiculously hard to focus on. 
+
 
 
 
