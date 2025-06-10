@@ -63,7 +63,7 @@ h2{
    100% { transform: rotate(-5deg) scale(120%); }
 }
 a:hover{
-    animation: jiggle 1s infinite;
+    animation: jiggle 1.5s infinite;
 }
 
 a{
