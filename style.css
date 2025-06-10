@@ -11,6 +11,25 @@
   100% { color: red; }
 }
 
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
 body {
   font-family: 'Gluten', sans-serif;
 }
@@ -18,4 +37,17 @@ body {
 /* For individual paragraphs (optional) */
 p, li, a {
   animation: rainbow 4s linear infinite !important;
+}
+
+h1{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: bounce 0.5s infinite alternate;
+}
+h2{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: wiggle 0.5s infinite alternate;
 }
